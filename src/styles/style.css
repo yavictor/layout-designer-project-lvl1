@@ -1,1 +1,39 @@
 /** CSS STYLE **/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+/* font-family: 'Neucha', cursive; */
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  color: #2a2626;
+  font: 16px/1.6 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
