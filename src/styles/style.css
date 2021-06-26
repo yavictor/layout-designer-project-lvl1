@@ -6,9 +6,9 @@
 
 body {
   box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
+  /* width: 100vw;
+  height: 100vh; */
+  margin: 0 auto;
 
   color: #2a2626;
   font: 16px/1.6 'Open Sans', sans-serif;
@@ -36,4 +36,77 @@ section {
   max-width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
+}
+
+.header {
+  background-color: #F5F4F0;
+  height: 914px;
+  padding-top: 50px;
+}
+
+.header .container {
+  max-width: 1110px;
+  height: 914px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  background: url('../images/background.png') center center/cover no-repeat;
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.header .title {
+  margin-bottom: 185px;
+  font-family: Neucha;
+}
+
+.header .title > .orange {
+  color: #FE8A02;
+}
+
+.columns-2 {
+  column-count: 2;
+  column-width: 540px;
+  column-gap: 30px;
+  height: auto;
+  text-align: start;
+}
+
+.columns-2 p {
+  margin: 0;
+
+}
+
+.toto-image {
+  position: absolute;
+  height: 525px;
+  top: -78px;
+  right: -270px;
+}
+
+.button {
+  width: 148px;
+  height: 49px;
+
+  position: absolute;
+  bottom: 250px;
+  right: 390px;
+  background-color: #FE8A02;
+  border: none;
+  /* padding: 12px 24px; */
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+
 }
