@@ -18,6 +18,7 @@ h1,
 h2,
 h3 {
   line-height: 1.2em;
+  margin: 0 auto;
 }
 
 h1 {
@@ -44,7 +45,7 @@ section {
   padding-top: 50px;
 }
 
-.header .container {
+.container {
   max-width: 1110px;
   height: 914px;
   margin: 0 auto;
@@ -62,13 +63,16 @@ section {
   bottom: 0;
 }
 
-.header .title {
-  margin-bottom: 185px;
+.title {
   font-family: Neucha;
 }
 
-.header .title > .orange {
+.title > .orange {
   color: #FE8A02;
+}
+
+.header .title {
+  margin-bottom: 185px;
 }
 
 .columns-2 {
@@ -109,4 +113,39 @@ section {
   line-height: 3;
   cursor: pointer;
 
+}
+
+.video-section {
+  height: 914px;
+  padding: 0;
+  position: relative;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.video-section .title {
+  padding-top: 100px;
+}
+
+.video-section article {
+  margin: 27px 0;
+
+}
+
+.video {
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.bottom-rectangle {
+  position: absolute;
+  bottom: 0;
+  left: -165px;
+  width: 100vw;
+  height: 100px;
+  background: #42413C;
+  z-index: -1;
 }
