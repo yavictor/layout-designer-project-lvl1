@@ -4,6 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 /* font-family: 'Neucha', cursive; */
 
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
 body {
   box-sizing: border-box;
   /* width: 100vw;
@@ -33,11 +40,11 @@ h3 {
   font-size: 34px;
 }
 
-section {
+/* section {
   max-width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
-}
+} */
 
 .header {
   background-color: #F5F4F0;
@@ -98,7 +105,6 @@ section {
 .button {
   width: 148px;
   height: 49px;
-
   position: absolute;
   bottom: 250px;
   right: 390px;
@@ -107,7 +113,7 @@ section {
   /* padding: 12px 24px; */
   text-align: center;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
   line-height: 3;
@@ -130,7 +136,7 @@ section {
 }
 
 .video-section article {
-  margin: 27px 0;
+  margin: 30px 0 27px 0;
 
 }
 
@@ -143,9 +149,68 @@ section {
 .bottom-rectangle {
   position: absolute;
   bottom: 0;
-  left: -165px;
+  left: 0;
   width: 100vw;
   height: 100px;
-  background: #42413C;
+  background: #42413c;
   z-index: -1;
+}
+
+.navigation {
+  background: #42413c;
+
+}
+
+.navigation .container {
+  height: 891px;
+}
+
+.navigation .title {
+
+}
+
+.navigation .flex-container {
+  display: flex;
+  gap: 29px;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.navigation .flex-container .title {
+  font-family: 'Neucha', cursive;
+  font-size: 52px;
+  line-height: 120%;
+  color: #fff;
+  background: #42413c;
+  padding: 0;
+}
+
+.flex-container .distortion {
+  box-sizing: border-box;
+  width: 350px;
+  max-height: 348px;
+  padding: 24px;
+  background: #F5F4F0;
+}
+
+.distortion .number {
+  margin-bottom: 40px;
+  font-size: 64px;
+  font-family: 'Neucha', cursive;
+  line-height: 1;
+}
+
+.distortion .distortion-title {
+  font-family: 'Neucha', cursive;
+  font-size: 34px;
+  line-height: 120%;
+  color: #FE8A02;
+  margin-bottom: 16px;
+}
+
+.distortion .distortion-descr {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2A2626;
 }
