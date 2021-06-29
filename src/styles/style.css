@@ -49,13 +49,11 @@ h3 {
 
 .header {
   background-color: #F5F4F0;
-  height: 914px;
-  padding-top: 50px;
+  padding: 100px 0 189px 0;
 }
 
 .container {
   max-width: 1110px;
-  height: 914px;
   margin: 0 auto;
   position: relative;
 }
@@ -110,11 +108,10 @@ h3 {
   width: 148px;
   height: 49px;
   position: absolute;
-  bottom: 250px;
-  right: 390px;
+  bottom: -100px;
+  right: 392px;
   background-color: #FE8A02;
   border: none;
-  /* padding: 12px 24px; */
   text-align: center;
   text-decoration: none;
   color: #fff;
@@ -169,10 +166,6 @@ h3 {
   height: 891px;
 }
 
-.navigation .title {
-
-}
-
 .navigation .flex-container {
   display: flex;
   gap: 29px;
@@ -221,7 +214,6 @@ h3 {
 
 .distortion-screen-light {
   padding: 100px 0;
-  height: 914px;
   background: #F5F4F0;
   position: relative;
 }
@@ -264,7 +256,6 @@ h3 {
 
 .distortion-screen-dark {
   padding: 100px 0;
-  height: 914px;
   background: #B09A81;
   position: relative;
   color: #fff;
