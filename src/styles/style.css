@@ -59,7 +59,8 @@ h3 {
   position: relative;
 }
 
-.header::before {
+.header::before,
+.distortion-screen-light::before {
   content: "";
   background: url('../images/background.png') center center/cover no-repeat;
   opacity: 0.1;
@@ -71,7 +72,7 @@ h3 {
 }
 
 .title {
-  font-family: Neucha;
+  font-family: 'Neucha', cursive;
 }
 
 .title > .orange {
@@ -86,6 +87,7 @@ h3 {
   column-count: 2;
   column-width: 540px;
   column-gap: 30px;
+  column-fill: balance;
   height: auto;
   text-align: start;
 }
@@ -213,4 +215,51 @@ h3 {
   font-size: 16px;
   line-height: 26px;
   color: #2A2626;
+}
+
+.distortion-screen-light {
+  padding: 100px 0;
+  height: 714px;
+  background: #F5F4F0;
+  position: relative;
+}
+
+.ikea-effect .distortion-screen-light::before {
+  top: 400vh;
+}
+
+.distortion-top {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.cognitive-distortion-title {
+  font-family: 'Neucha', cursive;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.brief {
+  margin-top: 30px;
+  font-family: 'Neucha', cursive;
+  font-size: 34px;
+  line-height: 41px;
+}
+
+.explanation-title {
+  width: 100%;
+  padding: 5px 10px;
+  background: #B09A81;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.explanation-article p {
+  height: 125px;
 }
