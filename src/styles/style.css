@@ -11,7 +11,8 @@
 }
 
 
-body {
+body,
+section {
   box-sizing: border-box;
   /* width: 100vw;
   height: 100vh; */
@@ -60,7 +61,8 @@ h3 {
 }
 
 .header::before,
-.distortion-screen-light::before {
+.distortion-screen-light::before,
+.distortion-screen-dark::before {
   content: "";
   background: url('../images/background.png') center center/cover no-repeat;
   opacity: 0.1;
@@ -219,13 +221,9 @@ h3 {
 
 .distortion-screen-light {
   padding: 100px 0;
-  height: 714px;
+  height: 914px;
   background: #F5F4F0;
   position: relative;
-}
-
-.ikea-effect .distortion-screen-light::before {
-  top: 400vh;
 }
 
 .distortion-top {
@@ -262,4 +260,21 @@ h3 {
 
 .explanation-article p {
   height: 125px;
+}
+
+.distortion-screen-dark {
+  padding: 100px 0;
+  height: 914px;
+  background: #B09A81;
+  position: relative;
+  color: #fff;
+}
+
+.distortion-screen-dark .explanation-title {
+  color: #B09A81;
+  background: #FFFFFF;
+}
+
+.distortion-screen-dark .cognitive-distortion-title {
+  color: #D7CCC0;
 }
