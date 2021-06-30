@@ -1,8 +1,6 @@
 /** CSS STYLE **/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-/* font-family: 'Open Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
-/* font-family: 'Neucha', cursive; */
 
 * {
   padding: 0;
@@ -10,14 +8,10 @@
   border: 0;
 }
 
-
 body,
 section {
   box-sizing: border-box;
-  /* width: 100vw;
-  height: 100vh; */
   margin: 0 auto;
-
   color: #2a2626;
   font: 16px/1.6 'Open Sans', sans-serif;
 }
@@ -41,15 +35,9 @@ h3 {
   font-size: 34px;
 }
 
-/* section {
-  max-width: 1110px;
-  margin: 0 auto;
-  padding: 100px 0;
-} */
-
 .header {
-  background-color: #F5F4F0;
   padding: 100px 0 189px 0;
+  background-color: #f5f4f0;
 }
 
 .container {
@@ -61,14 +49,14 @@ h3 {
 .header::before,
 .distortion-screen-light::before,
 .distortion-screen-dark::before {
-  content: "";
-  background: url('../images/background.png') center center/cover no-repeat;
-  opacity: 0.1;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
+  content: "";
+  background: url('../images/background.png') center center/cover no-repeat;
+  opacity: 0.1;
 }
 
 .title {
@@ -76,7 +64,7 @@ h3 {
 }
 
 .title > .orange {
-  color: #FE8A02;
+  color: #fe8a02;
 }
 
 .header .title {
@@ -84,17 +72,16 @@ h3 {
 }
 
 .columns-2 {
+  height: auto;
   column-count: 2;
   column-width: 540px;
   column-gap: 30px;
   column-fill: balance;
-  height: auto;
   text-align: start;
 }
 
 .columns-2 p {
   margin: 0;
-
 }
 
 .toto-image {
@@ -110,16 +97,15 @@ h3 {
   position: absolute;
   bottom: -100px;
   right: 392px;
-  background-color: #FE8A02;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 3;
+  background-color: #fe8a02;
   border: none;
   text-align: center;
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 3;
-  cursor: pointer;
-
+  cursor: poiеner;
 }
 
 .video-section {
@@ -138,7 +124,6 @@ h3 {
 
 .video-section article {
   margin: 30px 0 27px 0;
-
 }
 
 .video {
@@ -159,7 +144,6 @@ h3 {
 
 .navigation {
   background: #42413c;
-
 }
 
 .navigation .container {
@@ -174,12 +158,12 @@ h3 {
 }
 
 .navigation .flex-container .title {
+  padding: 0;
   font-family: 'Neucha', cursive;
   font-size: 52px;
   line-height: 120%;
   color: #fff;
   background: #42413c;
-  padding: 0;
 }
 
 .flex-container .distortion {
@@ -187,7 +171,7 @@ h3 {
   width: 350px;
   max-height: 348px;
   padding: 24px;
-  background: #F5F4F0;
+  background: #f5f4f0;
 }
 
 .distortion .number {
@@ -197,25 +181,25 @@ h3 {
   line-height: 1;
 }
 
-.distortion .distortion-title {
+.distortion-title {
+  margin-bottom: 16px;
   font-family: 'Neucha', cursive;
   font-size: 34px;
   line-height: 120%;
-  color: #FE8A02;
-  margin-bottom: 16px;
+  color: #fe8a02;
 }
 
-.distortion .distortion-descr {
+.distortion-descr {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 26px;
-  color: #2A2626;
+  color: #2a2626;
 }
 
 .distortion-screen-light {
-  padding: 100px 0;
-  background: #F5F4F0;
   position: relative;
+  padding: 100px 0;
+  background: #f5f4f0;
 }
 
 .distortion-top {
@@ -240,7 +224,6 @@ h3 {
 .explanation-title {
   width: 100%;
   padding: 5px 10px;
-  background: #B09A81;
   margin-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -248,6 +231,7 @@ h3 {
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
+  background: #b09a81;
 }
 
 .explanation-article p {
@@ -256,33 +240,32 @@ h3 {
 
 .distortion-screen-dark {
   padding: 100px 0;
-  background: #B09A81;
   position: relative;
   color: #fff;
+  background: #b09a81;
 }
 
 .distortion-screen-dark .explanation-title {
-  color: #B09A81;
-  background: #FFFFFF;
+  color: #b09a81;
+  background: #fff;
 }
 
 .distortion-screen-dark .cognitive-distortion-title {
-  color: #D7CCC0;
+  color: #d7ccc0;
 }
 
 .footer {
   padding: 100px 0;
 }
 
-.subscription-form{
+.subscription-form {
   width: 100%;
   height: 190px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #42413C;
+  background: #42413c;
   color: #fff;
-
 }
 
 .suscription-title {
@@ -301,7 +284,6 @@ h3 {
   line-height: 160%;
 }
 
-
 .input-container {
   display: flex;
 }
@@ -317,17 +299,17 @@ h3 {
   width: 70px;
   margin-top: 9px;
   position: relative;
-  background: #FE8A02;
+  background: #fe8a02;
 }
 
 .email-input-btn::before {
   position: absolute;
-  content: '';
-  background: url('../images/send.svg') center center/cover no-repeat;
   height: 25px;
   width: 25px;
   left: 22px;
   top: 14px;
+  content: '';
+  background: url('../images/send.svg') center center/cover no-repeat;
 }
 
 .input-terms {
@@ -347,4 +329,16 @@ h3 {
 
 .copyright-and-resourses div {
   margin-top: 16px;
+}
+
+.button:hover,
+.email-input-btn:hover {
+  background: #ea7600;
+}
+
+.distortion:hover,
+.distortion:hover > .distortion-title,
+.distortion:hover > .distortion-descr {
+  color: #fff;
+  background: #fe8a02;
 }
