@@ -41,7 +41,7 @@ h3 {
 .header {
   display: block;
   background-color: #f5f4f0;
-  height: 915px;
+  height: 914px;
 }
 
 .container {
@@ -58,7 +58,7 @@ h3 {
   position: absolute;
   content: "";
   width: 100%;
-  height: 915px;
+  height: 100%;
   background: url('../images/background.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,10 +128,6 @@ h3 {
   text-align: center;
 }
 
-.video-section .title {
-  padding-top: 100px;
-}
-
 .video-section article {
   margin: 30px 0 27px 0;
 }
@@ -157,14 +153,15 @@ h3 {
 }
 
 .navigation .container {
-  height: 891px;
+  height: 791px;
+  padding: 0;
+  padding-top: 100px;
 }
 
 .navigation .flex-container {
   display: flex;
   gap: 29px;
   flex-wrap: wrap;
-  padding: 100px 0;
 }
 
 .navigation .flex-container .title {
@@ -211,7 +208,6 @@ h3 {
 
 .distortion-screen-light {
   position: relative;
-  padding: 100px 0;
   background: #f5f4f0;
 }
 
@@ -247,12 +243,7 @@ h3 {
   background: #b09a81;
 }
 
-.explanation-article p {
-  height: 125px;
-}
-
 .distortion-screen-dark {
-  padding: 100px 0;
   position: relative;
   color: #fff;
   background: #b09a81;
@@ -265,10 +256,6 @@ h3 {
 
 .distortion-screen-dark .cognitive-distortion-title {
   color: #d7ccc0;
-}
-
-.footer {
-  padding: 100px 0;
 }
 
 .subscription-form {
