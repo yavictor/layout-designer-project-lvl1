@@ -1,10 +1,22 @@
-/** CSS STYLE **/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+:root {
+  --white: #fff;
+  --translucent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main-color: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --translucent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+  --font-color: #2a2626;
+}
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   border: 0;
 }
 
@@ -15,15 +27,15 @@ main,
 footer {
   box-sizing: border-box;
   margin: 0 auto;
-  color: #2a2626;
-  font: 16px/1.6 'Open Sans', sans-serif;
+  color: var(--font-color);
+  font: 16px/1.6 "Open Sans", sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  line-height: 1.2em;
   margin: 0 auto;
+  line-height: 1.2em;
 }
 
 h1 {
@@ -40,14 +52,14 @@ h3 {
 
 .header {
   display: block;
-  background-color: #f5f4f0;
   height: 914px;
+  background-color: var(--light);
 }
 
 .container {
+  position: relative;
   width: 1110px;
   margin: 0 auto;
-  position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -57,13 +69,13 @@ h3 {
 .distortion-screen-dark::before {
   position: absolute;
   content: "";
-  width: 100%;
-  height: 100%;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: url('../images/background.png');
+  width: 100%;
+  height: 100%;
+  background: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
@@ -74,20 +86,20 @@ h3 {
 }
 
 .title {
-  font-family: 'Neucha', cursive;
-  font-style: normal;
   font-weight: normal;
+  font-family: "Neucha", cursive;
+  font-style: normal;
   line-height: 86px;
 }
 
-.title > .orange {
-  color: #fe8a02;
+.title>.orange {
+  color: var(--main-color);
 }
 
 .columns-2 {
-  column-width: 540px;
   height: auto;
   column-count: 2;
+  column-width: 540px;
 }
 
 .header .columns-2 {
@@ -100,35 +112,35 @@ h3 {
 
 .toto-image {
   position: absolute;
-  height: 525px;
   top: 50px;
   right: -270px;
   z-index: 2;
+  height: 525px;
 }
 
 .button {
   display: block;
+  box-sizing: border-box;
   width: 148px;
   height: 49px;
-  padding: 12px 24px;
   margin-top: 40px;
   margin-left: 570px;
-  box-sizing: border-box;
-  font-size: 16px;
+  padding: 12px 24px;
+  color: var(--white);
   font-weight: bold;
+  font-size: 16px;
   line-height: 26px;
-  background-color: #fe8a02;
-  border: none;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  background-color: var(--main-color);
+  border: none;
   cursor: pointer;
 }
 
 .video-section {
-  padding: 0;
   position: relative;
   height: 806px;
+  padding: 0;
 }
 
 .centered-text {
@@ -141,28 +153,17 @@ h3 {
 
 .video-section article {
   margin: 27px 0 32px 0;
-
 }
 
 .video {
+  z-index: 1;
   display: block;
   margin: 0 auto;
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-  z-index: 1;
 }
 
-/* .bottom-rectangle {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 100px;
-  background: #42413c;
-  z-index: -1;
-} */
-
 .navigation {
-  background: #42413c;
+  background: var(--main-dark);
 }
 
 .navigation .container {
@@ -172,53 +173,53 @@ h3 {
 }
 
 .navigation .flex-container {
-  margin-top: 100px;
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
   row-gap: 20px;
   column-gap: 30px;
-  flex-wrap: wrap;
 }
 
 .navigation .flex-container .title {
   padding: 0;
-  font-family: 'Neucha', cursive;
-  font-size: 52px;
-  line-height: 120%;
   color: #fff;
-  background: #42413c;
+  font-size: 52px;
+  font-family: "Neucha", cursive;
+  line-height: 120%;
+  background: var(--main-dark);
 }
 
 .flex-container .distortion {
+  display: block;
   box-sizing: border-box;
   width: 350px;
   max-height: 348px;
   padding: 24px;
-  background: #f5f4f0;
-  display: block;
+  color: var(--main-dark);
   text-decoration: none;
-  color: #42413c;
+  background: var(--light);
 }
 
 .distortion .number {
   margin-bottom: 40px;
   font-size: 64px;
-  font-family: 'Neucha', cursive;
+  font-family: "Neucha", cursive;
   line-height: 1;
 }
 
 .distortion-title {
   margin-bottom: 16px;
-  font-family: 'Neucha', cursive;
+  color: var(--main-color);
   font-size: 34px;
+  font-family: "Neucha", cursive;
   line-height: 120%;
-  color: #fe8a02;
 }
 
 .distortion-descr {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 26px;
   color: #2a2626;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 26px;
 }
 
 .distortion-screen-light {
@@ -237,62 +238,62 @@ h3 {
 }
 
 .cognitive-distortion-title {
-  font-family: 'Neucha', cursive;
-  font-size: 24px;
-  line-height: 29px;
   font-weight: normal;
+  font-size: 24px;
+  font-family: "Neucha", cursive;
+  line-height: 29px;
 }
 
 .brief {
   margin-top: 30px;
-  font-family: 'Neucha', cursive;
   font-size: 34px;
+  font-family: "Neucha", cursive;
   line-height: 41px;
 }
 
 .explanation-title {
   box-sizing: border-box;
   width: 100%;
-  padding: 5px 10px;
   margin-bottom: 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
+  padding: 5px 10px;
   font-weight: bold;
   font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
   line-height: 17px;
   text-transform: uppercase;
-  background: #b09a81;
+  background: var(--brown);
 }
 
 .distortion-screen-dark {
   position: relative;
-  color: #fff;
-  background: #b09a81;
+  color: var(--white);
+  background: var(--brown);
 }
 
 .distortion-screen-dark .explanation-title {
-  color: #b09a81;
-  background: #fff;
+  color: var(--brown);
+  background: var(--white);
 }
 
 .distortion-screen-dark .cognitive-distortion-title {
-  color: #d7ccc0;
+  color: var(--translucent-white);
 }
 
 .subscription-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 190px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #42413c;
-  color: #fff;
+  color: var(--white);
+  background: var(--main-dark);
 }
 
 .suscription-title {
   padding: 55px;
-  font-family: 'Neucha', cursive;
   font-size: 34px;
+  font-family: "Neucha", cursive;
   line-height: 120%;
 }
 
@@ -310,27 +311,27 @@ h3 {
 }
 
 .email-input {
-  margin-top: 9px;
-  height: 50px;
   width: 423px;
+  height: 50px;
+  margin-top: 9px;
 }
 
 .email-input-btn {
-  height: 50px;
-  width: 70px;
-  margin-top: 9px;
   position: relative;
-  background: #fe8a02;
+  width: 70px;
+  height: 50px;
+  margin-top: 9px;
+  background: var(--main-color);
 }
 
 .email-input-btn::before {
   position: absolute;
-  height: 25px;
-  width: 25px;
-  left: 22px;
   top: 14px;
-  content: '';
-  background: url('../images/send.svg') center center/cover no-repeat;
+  left: 22px;
+  width: 25px;
+  height: 25px;
+  content: "";
+  background: url("../images/send.svg") center center/cover no-repeat;
 }
 
 .input-terms {
@@ -339,11 +340,11 @@ h3 {
 }
 
 .copyright-and-resourses {
-  margin-top: 60px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
   font-size: 14px;
   line-height: 160%;
 }
@@ -358,8 +359,8 @@ h3 {
 }
 
 .distortion:hover,
-.distortion:hover > .distortion-title,
-.distortion:hover > .distortion-descr {
-  color: #fff;
-  background: #fe8a02;
+.distortion:hover>.distortion-title,
+.distortion:hover>.distortion-descr {
+  color: var(--white);
+  background: var(--main-color);
 }
